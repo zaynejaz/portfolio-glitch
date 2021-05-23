@@ -1,0 +1,452 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+
+:root {
+	--white: #ffffff;
+	--lighter: #b2b3b6;
+	--light: #aeb1b8;
+	--gray: #7b7d81;
+	--dark: #101214;
+	--flag-blue: #061e5c;
+	--flag-red: #850710;
+
+	--breakpoint-xs: 0;
+	--breakpoint-sm: 576px;
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 992px;
+	--breakpoint-xl: 1200px;
+	--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/*=========================================GENERAL=========================================*/
+* {
+	margin: 0;
+	padding: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Source Sans Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif,;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+*:not(a):not(a *) {
+	cursor: default;
+}
+
+html {
+	height: 100%;
+	font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: var(--white);
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Source Sans Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-size: 18px;
+	font-weight: 400;
+	color: var(--gray);
+	text-align: left;
+	background: var(--dark);
+	background-color: var(--dark);
+	margin: 0;
+	min-height: 100%;
+}
+
+h1,
+h2 {
+	font-weight: normal;
+	font-size: 25px;
+	color: var(--white);
+}
+
+a{
+	text-decoration: none !important;
+}
+
+.fullScreen {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+#pageContainer {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	margin-top: -280px;
+	height: 560px;
+}
+
+header {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 58%;
+	width: 240px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#header-content,
+#header-logo {
+	text-align: center;
+}
+
+#header-content #logo {
+	margin-bottom: 10px;
+}
+
+#header-content p {
+	padding-top: 2px;
+}
+
+#contact {
+	padding-top: 12px;
+}
+
+#contact a {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+#contact a,
+#contact a svg {
+	width: 25px;
+	height: 19px;
+	cursor: pointer;
+}
+
+#contact a svg path {
+	fill: var(--gray);
+}
+#contact a:hover svg path {
+	fill: var(--light);
+}
+
+#content {
+	position: absolute;
+	left: 50%;
+	width: 50%;
+	top: -10px;
+}  
+
+#aboutMe1,
+#aboutMe2,
+#aboutMe3{
+	cursor: default;
+}
+
+section {
+	margin-bottom: 30px;
+}
+
+section h2 {
+	height: 30px;
+}
+
+section p#aboutMeText {
+	font-size: 15px;
+	padding-right: 5px !important;
+	margin-right: 15px !important;
+}
+
+section ul {
+	line-height: 22px;
+	list-style: none;
+	padding-top: 2px;
+	padding-bottom: 5px;
+}
+
+section ul a {
+	color: var(--gray);
+	text-decoration: none;
+}
+section ul a:hover {
+	color: var(--light);
+}
+
+a.more {
+	font-size: 16px;
+	text-decoration: none;
+}
+
+a.more svg {
+	width: 6px;
+	height: 10px;
+	margin-left: 7px;
+}
+
+a.more {
+	color: var(--lighter);
+}
+a.more .arrow {
+	fill: var(--lighter);
+}
+a.more:hover {
+	color: var(--light);
+}
+a.more:hover .arrow {
+	fill: var(--light);
+}
+
+#page-stripes {
+	pointer-events: none;
+}
+
+
+#intro {
+	background: var(--dark);
+	pointer-events: none;
+}
+
+#logo-container {
+	transform-origin: 50% 50%;
+	transform: scale(0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	visibility: hidden;
+}
+
+#logo-container > svg {
+	width: 70vw;
+	height: 70vh;
+	max-width: 640px;
+	max-height: 536px;
+}
+
+.tooltip-inner {
+	color: var(--white);
+	font-size: 12px;
+	font-weight: normal;
+    text-align: center;
+	padding: 3px 8px;
+	margin-top: -3px;
+	max-width: 200px;
+	border-radius: 0;
+	background: var(--dark) !important;
+	background-color: var(--dark) !important;
+	opacity: 1;
+}
+
+.arrow::before{
+	border-bottom-color: #00000000!important
+}
+
+.codeLink{
+	font-family: 'Fira Code', monospace;
+	font-weight: 300;
+	font-size: 60%;
+	line-height: 1;
+	padding-top: .5em;
+}
+
+
+/* ===================== SOCIAL MEIDA LINKS ===================== */
+span.skill a,
+span.contact-item a{
+	color: var(--gray) !important;
+}
+
+.contactLinks,
+.contact-item,
+.contact-icons{
+	align-items: center;
+	text-align: center;
+}
+
+.contact-item a{
+	display: inline;
+	align-items: center;
+	text-align: center;
+}
+
+.contact-item a i{
+	font-size: 25px;
+}
+
+.contact-item .contact-icons{
+	overflow: hidden;
+}
+
+.contact-item .contact-icons svg{
+	height: 20px;
+	opacity: 0;
+	transform: translateY(-20px);
+}
+
+.contact-item a:hover > .contact-icons i{
+	opacity: 0;
+}
+
+.contact-item a:hover > .contact-icons svg{
+	opacity: 1;
+}
+
+.contact-item  .contact-icons{
+	display:inline;
+}
+
+.contact-item .contact-icons i{
+	color: var(--gray);
+}
+
+
+/* ===================== LIVE CHAT BUTTON LINK ===================== */
+#liveChat{
+	position:relative;
+	text-align:center;
+	width:50px;
+	height:60px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.dot {
+	display:inline-block;
+	width:12px;
+	height:2px;
+	border-radius:0%;
+	background:linear-gradient(124deg, #ff2400, #e81d1d, #ebb71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+	background-size: 2000% 2000%;
+	animation: blinkFade 1.5s linear infinite, bgRainbow 10s ease infinite;
+}
+.dot:nth-child(2) {
+	animation-delay: -1.1s;
+}
+.dot:nth-child(3) {
+	animation-delay: -0.7s;
+}
+
+@keyframes blinkFade {
+	0%, 60%, 100% {
+		opacity: 1;
+	}
+	30% {
+		opacity: 0;
+	}
+}
+
+@keyframes bgRainbow {
+	0%{
+		background-position: 0 82%;
+	}
+	50%{
+		background-position: 100% 19%;
+	}
+	100%{
+		background-position: 0 82%;
+	}
+}
+
+/* ===================== MUSIC PLAYER ===================== */
+#music-container{
+	padding-top:25px;
+}
+
+#music-container #play-pause {
+	cursor: pointer;
+	height: 30px;
+	width: 30px;
+	background: none;
+	background-color: none;
+	/* background-image: url('/assets/play-solid.svg'); */
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:30px;
+}
+
+.play {
+	/* background-image: url('/assets/play-solid.svg'); */
+	margin-left: auto;
+	margin-right: auto;
+    margin-top: 0px;
+    transition: all 1s ease-in-out;
+}
+
+.pause {
+	/* background-image: url('/assets/pause-solid.svg')!important; */
+	margin-left: auto;
+	margin-right: auto;
+    margin-top: 0px;
+    transition: all 1s ease-in-out;
+}
+
+
+/* ===================== MEDIA QUERIES ===================== */
+@media only screen and (max-width: 992px) {
+	.codeLink{
+		padding-right: 5px !important;
+		margin-right: 10px !important;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	#behanceLogo,
+	#githubLogo,
+	#linkedinLogo{
+		display: none;
+	}
+	.container.contact-container{
+		max-width: 720px !important;
+	}
+	.contact-item{
+		width: 22%;
+	}
+	#liveChat{
+		height: 40px;
+	}
+}
+
+@media only screen and (max-height: 580px), only screen and (max-width: 578px) {
+	#pageContainer {
+		top: 14px;
+		margin-top: 0;
+	}
+}
+
+@media only screen and (max-width: 578px) {
+	header {
+		position: static;
+		top: 10px;
+		padding-bottom: 16px;
+		margin: 40px 24px 16px;
+		width: auto;
+	}
+	#header-content #logo {
+		top: -33px;
+	}
+
+	#header-content h1,
+	#header-content p {
+		left: 24px;
+		margin-left: 0;
+	}
+	#contact {
+		left: 252px;
+		margin-left: 0;
+        margin-right: 148px;
+	}
+	#content {
+		position: relative;
+		left: 24px;
+		right: 24px;
+		margin-left: 0;
+		width: auto;
+	}
+	section,
+	section#openSource,
+	section#work {
+		width: 100%;
+		float: left;
+		clear: both;
+	}
+	#aboutMeText,
+	.codeLink{
+		padding-right: 0px !important;
+		margin-right: 0px !important;
+	}
+}

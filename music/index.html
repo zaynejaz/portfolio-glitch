@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<style>
+
+#music-container #play-pause {
+	cursor: pointer;
+	height: 30px;
+	width: 30px;
+	background: none;
+	background-color: none;
+	/* background-image: url('/fonts/play-solid.svg'); */
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:30px;
+  }
+
+  .play {
+	/* background-image: url('/fonts/play-solid.svg'); */
+	margin-left: auto;
+	margin-right: auto;
+    margin-top: 25px;
+    transition: all 1s ease-in-out;
+  }
+
+  .pause {
+	 /* background-image: url('/fonts/pause-solid.svg')!important; */
+	 margin-left: auto;
+	margin-right: auto;
+    margin-top: 25px;
+    transition: all 1s ease-in-out;
+    
+  }
+
+
+
+
+</style>
+
+</head>
+<body>    
+
+
+    <audio id="track" loop>
+        <source src="/music/track1.mp3" type="audio/mp3" />
+    </audio>
+
+    <div id="music-container" class="text-center mx-auto">
+        <div id="play-pause" class="buttons">
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="play" id="playMusic" data-toggle="tooltip" data-placement="bottom" title="Play Music" onclick="divVisibility('pauseMusic');" ><path fill="#7b7d81" d="M 9 5.15625 L 9 26.84375 L 10.53125 25.84375 L 25.84375 16 L 10.53125 6.15625 Z M 11 8.8125 L 22.15625 16 L 11 23.1875 Z"/></svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="pause" id="pauseMusic" style="display: none;" data-toggle="tooltip" data-placement="bottom" title="Pause Music" onclick="divVisibility('playMusic');"><path fill="#7b7d81" d="M 10 6 L 10 26 L 12 26 L 12 6 Z M 20 6 L 20 26 L 22 26 L 22 6 Z"/></svg>
+
+        </div>
+    </div>
+
+
+
+<!-- PLAY / PAUSE MUSIC ON SITE -->
+<script>
+    var track = document.getElementById('track');
+
+    var controlBtn = document.getElementById('play-pause');
+
+    function playPause() {
+        if (track.paused) {
+            track.play();
+            // controlBtn.textContent = "Pause";
+            controlBtn.className = "pause";
+        } else { 
+            track.pause();
+            // controlBtn.textContent = "Play";
+            controlBtn.className = "play";
+        }
+    }
+
+    controlBtn.addEventListener("click", playPause);
+    track.addEventListener("ended", function() {
+    controlBtn.className = "play";
+    });
+
+
+    var divs = ["playMusic", "pauseMusic"];
+    var visibleDivId = null;
+    function divVisibility(divId) {
+      if(visibleDivId === divId) {
+        visibleDivId = null;
+      } else {
+        visibleDivId = divId;
+      }
+      hideNonVisibleDivs();
+    }
+    function hideNonVisibleDivs() {
+      var i, divId, div;
+      for(i = 0; i < divs.length; i++) {
+        divId = divs[i];
+        div = document.getElementById(divId);
+        if(visibleDivId === divId) {
+          div.style.display = "block";
+        } else {
+          div.style.display = "none";
+        }
+      }
+    }
+</script>
+
+</body>
+</html>
