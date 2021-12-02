@@ -420,11 +420,6 @@ span {
   }
 }
 
-@media only screen and (max-width: 775px) {
-  iframe {
-    bottom: 80px !important;
-  }
-}
 @media only screen and (max-width: 767px) {
   #behanceLogo, #githubLogo, #linkedinLogo, #emailMeLogo {
     display: none;
