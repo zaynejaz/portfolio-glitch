@@ -556,23 +556,25 @@ ptrb-1{
 }
 
 @media screen and (max-width: 578px) {
-  body{
-    margin-bottom: 575px !important;
-  }
-  section#contact-section{
-    display: none;
+  section#contact-section {
+    height: 45px;
+    .contact-container, h2#contactMe{
+      display: none;
+    }
   }
   footer {
     display: block;
     position: fixed;
     width: 100%;
-    bottom: 0;
+    bottom: -10px;
     padding-top: 0px;
     padding-bottom: 15px;
     background: var(--black);
     background-color: var(--black);
+    border-radius: 100% 100% 0% 0%;
     .row.contactLinks{
       justify-content: center;
+      margin-bottom: 20px;
     }
     h2#contactMe{
       font-size:16px;
@@ -588,7 +590,6 @@ ptrb-1{
     }
     .contact-itemIcon{
       max-width: 16.4% !important;
-
       margin: 0px !important;
       margin-top: -15px !important;
     }
