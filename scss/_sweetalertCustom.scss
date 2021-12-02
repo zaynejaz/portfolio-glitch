@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Abel&display=swap);
+
+.swal-overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.swal-modal {
+  background-color: var(--dark);
+  border: none;
+  border-radius: 0px;
+}
+
+.swal-title {
+    font-family: Abel, "Roboto Condensed", sans-serif !important;
+    color: var(--gray);
+    margin: 0px;
+    margin-bottom: 28px;
+}
+
+.swal-text {
+    display: block;
+    font-family: Abel, "Roboto Condensed", sans-serif !important;
+    color: var(--gray);
+    background-color: var(--dark);
+    text-align: center;
+    margin: 22px;
+    padding: 17px;
+    border: none;
+}
+.swal-footer{
+    text-align: center;
+    .swal-button-container{
+        width: 50%;
+        .swal-button {
+            font-family: Abel, "Roboto Condensed", sans-serif !important;
+            font-size: 16px;
+            color: var(--white);
+            width: 100%;
+            padding: 8px 20px;
+            background: var(--dark-gray);
+            background-color: var(--dark-gray);
+            border-radius: 0px;
+            border: 0px !important;
+            border-bottom: 2px solid var(--blue) !important;
+            outline: none !important;
+            &:hover, &:not([disabled]):hover {
+                background: var(--blue);
+                background-color: var(--blue);
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.swal-icon--error__line{
+    background:var(--orange);
+    background-color:var(--orange);
+}
+.swal-icon--error{
+    border-color: var(--orange);
+}
+
+
+
+.swal-icon--success {
+    border-color: var(--lime);
+}
+.swal-icon--success::after, 
+.swal-icon--success::before{
+    background: var(--dark);
+}
+
+.swal-icon--success__line{
+    background-color: var(--lime);
+}
+.swal-icon--success__ring {
+    border: 4px solid hsla(98, 100%, 50%, .4);
+    // border-color: #a5dc86;
+}
+.swal-icon--success__hide-corners {
+    background-color: var(--dark);
+}

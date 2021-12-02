@@ -1,13 +1,23 @@
 @import '_normalize';
+@import '_contactForm';
+@import '_sweetalertCustom';
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
 
 :root {
   --none:transparent;
   --white:#ffffff;
+  --lightest:#f1f1f1;
+  --lighter-semi:#e7e7e7;
   --lighter:#b2b3b6;
   --light:#aeb1b8;
   --gray:#7b7d81;
+  --dark-gray:#2d2d2d;
   --dark:#101214;
+  --black:#000000;
+  --blue:#22a2e1;
+  --lime:#00ff00;
+  --red:#ff0000;
+  --orange:#ff8800;
   --flag-blue:#061e5c;
   --flag-red:#850710;
   --breakpoint-xs:0;
@@ -49,7 +59,9 @@ body {
   background: var(--dark);
   background-color: var(--dark);
   margin: 0;
+  // margin-bottom: 120px;
   min-height: 100%;
+  overflow-x: hidden;
 }
 
 h1, h2 {
@@ -309,6 +321,9 @@ span {
   }
 }
 
+
+
+
 /* ===================== LIVE CHAT BUTTON LINK ===================== */
 
 #liveChat {
@@ -406,7 +421,7 @@ span {
 }
 
 @media only screen and (max-width: 767px) {
-  #behanceLogo, #githubLogo, #linkedinLogo {
+  #behanceLogo, #githubLogo, #linkedinLogo, #emailMeLogo {
     display: none;
   }
 
@@ -483,6 +498,7 @@ span {
 }
 
 
+
 #liveChatIcon{
   margin-top: -30px;
 }
@@ -514,4 +530,85 @@ ptrb-1{
   padding-right: .25rem !important;
   padding-bottom: .25rem !important;
   padding-left: 0rem !important;
+}
+
+@media screen and (max-height: 450px) {
+  .emailOverlay {
+    overflow-y: auto;
+    a {
+      font-size: 20px
+    }
+    .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+}
+
+
+
+
+@media screen and (min-width: 579px) {
+  footer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  body{
+    margin-bottom: 475px !important;
+  }
+  section#contact-section{
+    display: none;
+  }
+  footer {
+    display: block;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding-top: 0px;
+    padding-bottom: 15px;
+    background: var(--black);
+    background-color: var(--black);
+    .row.contactLinks{
+      justify-content: center;
+    }
+    h2#contactMe{
+      font-size:16px;
+      line-height: 1.7;
+    }
+    .contactLinks, .contact-item, .contact-icons {
+      text-align: center !important;
+      margin: auto;
+      max-height: 44.5px;
+    }
+    .contact-icons i{
+      color: var(--lightest) !important;
+    }
+    .contact-itemIcon{
+      max-width: 16.4% !important;
+
+      margin: 0px !important;
+      margin-top: -15px !important;
+    }
+    .contact-itemInfo{
+      margin: 0px !important;
+      margin-top: -45px !important;
+      svg g {
+        animation: glitch 4s linear infinite;
+        transform-origin: 50% 50%;
+      }
+    }
+  }
+}
+
+
+@keyframes glitch {
+  1%{
+    transform: rotateX(20deg) skewX(180deg);
+  }
+  2%{
+    transform: rotateX(0deg) skewX(0deg);
+  }
 }
