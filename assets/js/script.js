@@ -52,7 +52,7 @@ var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
 // <!--End of Tawk.to Script-- >
 
 
-var def_tawk_bottom = "80px"; /*This is their default style that I want to change*/
+var def_tawk_bottom = "70px"; /*This is their default style that I want to change*/
 var def_tawk_right = "16px"; /*This is their default style that I want to change*/
 var customize_tawk = ""; /*Interval object*/
 
