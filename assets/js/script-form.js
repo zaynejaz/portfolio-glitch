@@ -2,11 +2,6 @@
     emailjs.init("user_qKPtzAoe4kKbCwE4Zl8ia");
 })();
 
-/**
-         User ID = user_qKPtzAoe4kKbCwE4Zl8ia
-         Access Token = cd4459119f21adb1e0a447e52e75be81
-         **/
-
 function validateForm() {
     let name = document.querySelector('#name')
     let email = document.querySelector('#email')

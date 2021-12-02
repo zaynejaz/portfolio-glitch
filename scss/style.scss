@@ -420,6 +420,11 @@ span {
   }
 }
 
+@media only screen and (max-width: 775px) {
+  iframe {
+    bottom: 20px !important;
+  }
+}
 @media only screen and (max-width: 767px) {
   #behanceLogo, #githubLogo, #linkedinLogo, #emailMeLogo {
     display: none;
@@ -557,7 +562,7 @@ ptrb-1{
 
 @media screen and (max-width: 578px) {
   body{
-    margin-bottom: 475px !important;
+    margin-bottom: 575px !important;
   }
   section#contact-section{
     display: none;
@@ -612,3 +617,5 @@ ptrb-1{
     transform: rotateX(0deg) skewX(0deg);
   }
 }
+
+
