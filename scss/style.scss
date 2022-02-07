@@ -1,5 +1,6 @@
 @import '_normalize';
 @import '_contactForm';
+@import '_multiModal';
 @import '_sweetalertCustom';
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
 
@@ -89,6 +90,11 @@ a {
   right: 0;
   margin-top: -280px;
   height: 560px;
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -ms-filter: blur(0px);
+  filter: blur(0px);
+        
 }
 
 header {
@@ -147,7 +153,7 @@ header {
   position: absolute;
   left: 50%;
   width: 50%;
-  top: -10px;
+  padding-top: 50px;
   max-width: 699px;
 }
 
@@ -179,12 +185,13 @@ section {
       justify-content: space-between;
       .projectLink{
         font-size:15px;
+        margin-left:15px;
       }
       .codeLink {
         font-family: 'Fira Code', monospace;
         font-weight: 300;
         font-size: 60%;
-        padding-top: .5em;
+        padding-top: 0em;
         display: table-cell;
       }
     }
@@ -477,6 +484,7 @@ span {
     margin-left: 0;
     width: auto;
     margin-right: 48px;
+    padding-top: 25px;
   }
 
   section {
@@ -615,3 +623,12 @@ ptrb-1{
 }
 
 
+
+
+
+
+// ======MODAL======
+
+
+
+        

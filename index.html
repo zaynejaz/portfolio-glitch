@@ -3,8 +3,7 @@
 
 <head>
     <meta name="description" content="Email and Web Developer. I give small businesses Affordable Solutions that boosts their Online Appearance and Increases Their Revenue, FAST!">
-    <meta name="keywords"
-        content="HTML, CSS, JavaScript, JS, SASS, PHP, Bootstrap, Zayn Ejaz, Zayn, Ejaz, SQL, mySQL, handlebars, zurb, email, web, developer, foundation, npm, git, wordpress, moodle, adobe, adobe cc, photoshop, illustrator, adobe xd, litmus, mailchimp, salesforce, react, crm, marketing, freelance, contact">
+    <meta name="keywords" content="HTML, CSS, JavaScript, JS, SASS, PHP, Bootstrap, Zayn Ejaz, Zayn, Ejaz, SQL, mySQL, handlebars, zurb, email, web, developer, foundation, npm, git, wordpress, moodle, adobe, adobe cc, photoshop, illustrator, adobe xd, litmus, mailchimp, salesforce, react, crm, marketing, freelance, contact">
     <meta name="author" content="Zayn Ejaz">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8" />
@@ -57,6 +56,41 @@
 		gtag('config', 'UA-156484615-1');
 	</script>
 
+
+    <script>
+        function modalClient() {
+            multiModal.show( "#modal-client" );
+            projectModalActive();
+        }
+        function modalWebsite() {
+            multiModal.show( "#modal-website" );
+            projectModalActive();
+        }
+        function modalEmail() {
+            multiModal.show( "#modal-email" );
+            projectModalActive();
+        }
+        function modalLP() {
+            multiModal.show( "#modal-lp" );
+            projectModalActive();
+        }
+        function modalCamp() {
+            multiModal.show( "#modal-camp" );
+            projectModalActive();
+        }
+        function modalPwa() {
+            multiModal.show( "#modal-pwa" );
+            projectModalActive();
+        }
+        function modalProto() {
+            multiModal.show( "#modal-proto" );
+            projectModalActive();
+        }
+        function closeDialog() {
+            multiModal.hide();
+            projectModalInactive();
+        }
+    </script>
 </head>
 
 <body>
@@ -552,11 +586,10 @@
                 <p id="myLocation" class="mt-4">Istanbul, Turkey</p>
 
 
-                <a class="py-0 px-3" id="#en" href="#en" aria-label="english"
+                <!-- <a class="py-0 px-3" id="#en" href="#en" aria-label="english"
                     onclick="window.location.href='#en'; location.reload()" data-toggle="tooltip"
                     data-placement="bottom" data-html="true" title="<em>English</em>">
                     <?xml version="1.0" encoding="utf-8"?>
-                    <!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                     <svg version="1.1" id="lang-EN" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height=18 viewBox="0 0 305.4 180.6"
                         style="enable-background:new 0 0 305.4 180.6;" xml:space="preserve">
@@ -581,7 +614,6 @@
                     onclick="window.location.href='#tr'; location.reload()" data-toggle="tooltip"
                     data-placement="bottom" data-html="true" title="<em>Türkçe</em>">
                     <?xml version="1.0" encoding="utf-8"?>
-                    <!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                     <svg version="1.1" id="lang-TR" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height=18 viewBox="0 0 305.4 180.6"
                         style="enable-background:new 0 0 305.4 180.6;" xml:space="preserve">
@@ -599,7 +631,7 @@
                             <path class="langTR" d="M248.5,160.4v-10.6h20.8V29.3h-20.8V18.7h33.9v141.6H248.5z" />
                         </g>
                     </svg>
-                </a>
+                </a> -->
 
                 <div class="container">
                     <div class="row">
@@ -609,7 +641,7 @@
                             </audio>
                             <div id="music-container" class="text-center mx-auto">
                                 <div id="play-pause" class="buttons text-center mx-auto">
-                                    <a href="#" aria-label="play / pause music">
+                                    <a href="javascript:void(0)" aria-label="play / pause music">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="play"
                                             id="playMusic" title="Play Music" data-toggle="tooltip"
                                             data-placement="bottom" onclick="playpauseVisibility('pauseMusic');">
@@ -663,80 +695,31 @@
                 <!-- <a href="#" id="moreAbout" class="more">More on about me<svg viewBox="0 0 10 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path class="arrow" d="M1.01362083,12.9421826 L1,15.6012598 L9.21426767,8.3533766 L1.07301897,1.34639246 L1.05985086,3.91708947 L6.21426767,8.3533766 L1.01362083,12.9421826 Z"></path></svg></a> -->
             </section>
 
-            <section id="project-section">
+            <section id="project-section" class="controls">
                 <h2 id="projectLab">Project Lab</h2>
-                <ul>
+                <ul slass="multiModal-contents">
                     <!-- portfolio site link -->
+
                     <li>
-                        <a href="https://athome.brightkidspreschool.com/" id="project1" class="projectLink"
-                            target="_blank" rel="noopener noreferer">BrightKids (Learning Platform)</a>
-                        <!-- <a href="#" id="codeLink1" class="codeLink float-right pr-3 mr-5" target="_blank" rel="noopener noreferer" >view code</a> -->
+                        <a href="javascript:void(0)" id="open-client" class="projectLink" onclick="modalClient();">Client Experience</a>
                     </li>
                     <li>
-                        <a href="https://www.bubu-island.com/" id="project2" class="projectLink" target="_blank"
-                            rel="noopener noreferer">Bubu Island (Booking Website)</a>
-                        <!-- <a href="#" id="codeLink2" class="codeLink float-right pr-3 mr-5" target="_blank" rel="noopener noreferer"></a> -->
+                        <a href="javascript:void(0)" id="open-website" class="projectLink" onclick="modalWebsite();"">Website Samples</a>
                     </li>
                     <li>
-                        <a href="https://clubvet.com.tr/" id="project3" class="projectLink" target="_blank"
-                            rel="noopener noreferer">Clubvet (Website)</a>
-                        <!-- <a href="#" id="codeLink3"class="codeLink float-right pr-3 mr-5" target="_blank" rel="noopener noreferer"></a> -->
+                        <a href="javascript:void(0)" id="open-email" class="projectLink" onclick="modalEmail();"">HTML Emails</a>
                     </li>
                     <li>
-                        <a href="https://ze-microsoft.netlify.app/" id="project4" class="projectLink" target="_blank"
-                            rel="noopener noreferer">Microsoft (Landing Page)</a>
-                        <a href="https://github.com/zaynejaz/Clone-Microsoft" id="codeLink4" class="codeLink pr-3 mr-5"
-                            target="_blank" rel="noopener noreferer">view
-                            code</a>
+                        <a href="javascript:void(0)" id="open-lp" class="projectLink" onclick="modalLP();"">Landing Pages</a>
                     </li>
                     <li>
-                        <a href="https://ze-theemailcompany.netlify.app/" id="project5" class="projectLink"
-                            target="_blank" rel="noopener noreferer">The Email Co (Landing Page)</a>
-                        <a href="https://github.com/zaynejaz/nextjs_landing_page" id="codeLink5"
-                            class="codeLink pr-3 mr-5" target="_blank" rel="noopener noreferer">view
-                            code</a>
+                        <a href="javascript:void(0)" id="open-camp" class="projectLink" onclick="modalCamp();"">Email Campaigns</a>
                     </li>
                     <li>
-                        <a href="https://ze-email5-natgeo.netlify.app/" id="project6" class="projectLink"
-                            target="_blank" rel="noopener noreferer">NatGeo (HTML Email)</a>
-                        <a href="https://github.com/zaynejaz/HTMLEmail7-Newsletter" id="codeLink6"
-                            class="codeLink pr-3 mr-5" target="_blank" rel="noopener noreferer">view
-                            code</a>
+                        <a href="javascript:void(0)" id="open-webapp" class="projectLink" onclick="modalPwa();"">Progressive Web Apps</a>
                     </li>
                     <li>
-                        <a href="https://ze-email8-applenewproducts.netlify.app/" id="project7" class="projectLink"
-                            target="_blank" rel="noopener noreferer">Apple (HTML Email)</a>
-                        <a href="https://github.com/zaynejaz/HTMLEmail10-Multi" id="codeLink7"
-                            class="codeLink pr-3 mr-5" target="_blank" rel="noopener noreferer">view
-                            code</a>
-                    </li>
-                    <li>
-                        <a href="https://ze-email1-applewatch.netlify.app/" id="project8" class="projectLink"
-                            target="_blank" rel="noopener noreferer">Apple: Watch (HTML Email)</a>
-                        <a href="https://github.com/zaynejaz/HTMLEmail3-Promotional" id="codeLink8"
-                            class="codeLink pr-3 mr-5" target="_blank" rel="noopener noreferer">view
-                            code</a>
-                    </li>
-                    <li>
-                        <a href="https://zaynejaz.github.io/klaviyo/" id="project9" class="projectLink" target="_blank"
-                            rel="noopener noreferer">Andrea Iyamah (HTML Email)</a>
-                        <a href="https://github.com/zaynejaz/klaviyo/blob/master/index.html" id="codeLink9" class="codeLink pr-3 mr-5"
-                            target="_blank" rel="noopener noreferer">view
-                            code</a>
-                    </li>
-                    <li>
-                        <a href="https://ze-email3-tunein.netlify.app/" id="project10" class="projectLink"
-                            target="_blank" rel="noopener noreferer">TuneIn (HTML Email)</a>
-                        <a href="https://github.com/zaynejaz/HTMLEmail5-Promotional" id="codeLink10"
-                            class="codeLink pr-3 mr-5" target="_blank" rel="noopener noreferer">view
-                            code</a>
-                    </li>
-                    <li>
-                        <a href="https://ze-mailerlite.netlify.app/welcomeemail/" id="project11" class="projectLink"
-                            target="_blank" rel="noopener noreferer">MailerLite (HTML Email)</a>
-                        <a href="https://github.com/zaynejaz/MailerLite/blob/master/welcomeEmail/index.html"
-                            id="codeLink11" class="codeLink pr-3 mr-5" target="_blank"
-                            rel="noopener noreferer">exhibition</a>
+                        <a href="javascript:void(0)" id="open-proto" class="projectLink" onclick="modalProto();"">UX/UI Designs</a>
                     </li>
                 </ul>
                 <a href="https://github.com/zaynejaz" id="moreGH" class="more" target="_blank"
@@ -1224,7 +1207,7 @@
 
                             <div class="form-head">
                                 <a class="navbar-brand" href="https://zaynejaz.com/">
-                                    <img src="./assets/images/logos/Zayn-Ejaz.gif" alt="zayn ejaz logo gif" />
+                                    <img src="/assets/images/logos/Zayn-Ejaz.gif" alt="zayn ejaz logo gif" />
                                     <img src="/assets/images/logos/xox-line.gif" class="xoxLoading" alt="xo loading gif" />
                                 </a>
                                 <h2>contact me</h2>
@@ -1427,6 +1410,392 @@
         </div>
     </div>
 
+
+
+    <section id="modal-client" class="multiModal-popup" >
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <span class="close closebtn" onclick="javascript:closeDialog();">&times;</span>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>
+                        <a href="https://bubu-island.com/" class="projectLink" target="_blank" rel="noopener noreferer">Bubu Island</a>
+                    </li>
+                    <li>
+                        <a href="https://clubvet.com.tr/" class="projectLink" target="_blank" rel="noopener noreferer">Clubvet</a>
+                    </li>
+                    <li>
+                        <a href="https://athome.brightkidspreschool.com/" class="projectLink" target="_blank" rel="noopener noreferer">BrightKids</a>
+                    </li>
+                    <li>
+                        <a href="https://mars.com/" class="projectLink" target="_blank" rel="noopener noreferer">Mars</a>
+                    </li>
+                    <li>
+                        <a href="https://iams.com/" class="projectLink" target="_blank" rel="noopener noreferer">Iams</a>
+                    </li>
+                    <li>
+                        <a href="https://sheba.com/" class="projectLink" target="_blank" rel="noopener noreferer">Sheba</a>
+                    </li>
+                    <li>
+                        <a href="https://apple.com/" class="projectLink" target="_blank" rel="noopener noreferer">Apple</a>
+                    </li>
+                    <li>
+                        <a href="https://lvmh.com/" class="projectLink" target="_blank" rel="noopener noreferer">LVMH</a>
+                    </li>
+                    <li>
+                        <a href="https://pumaenergy.com/" class="projectLink" target="_blank" rel="noopener noreferer">Puma Energy</a>
+                    </li>
+                    <li>
+                        <a href="https://mainfreight.com/" class="projectLink" target="_blank" rel="noopener noreferer">Mainfreight NZ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <h6>Whom I've had the<br>pleasure of working with</h6>
+            </div>
+        </div>
+    </section>
+
+    <section id="modal-website" class="multiModal-popup">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close closebtn" onclick="javascript:closeDialog();">&times;</span>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>
+                        <a href="https://zaynejaz.github.io/ " class="projectLink" target="_blank" rel="noopener noreferer">Zayn Ejaz | GitHub Pages</a>
+                        <a href="https://github.com/zaynejaz/zaynejaz.github.io" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="https://ze-casablanca.netlify.app/ " class="projectLink" target="_blank" rel="noopener noreferer">Casablanca</a>
+                        <a href="https://github.com/zaynejaz/Casablanca" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="https://ze-skulpt.netlify.app/" class="projectLink" target="_blank" rel="noopener noreferer">Skulpt</a>
+                        <a href="https://github.com/zaynejaz/Skulpt" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <h6>Website<br>Prototypes</h6>
+            </div>
+        </div>
+    </section>
+
+    <section id="modal-email" class="multiModal-popup">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close closebtn" onclick="javascript:closeDialog();">&times;</span>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>
+                        <a href="https://ze-email1-applewatch.netlify.app/" class="projectLink" target="_blank" rel="noopener noreferer">Apple Watch</a>
+                        <a href="https://github.com/zaynejaz/HTMLEmail3-Promotional" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="https://ze-email2-punisherfrank.netlify.app/" class="projectLink" target="_blank" rel="noopener noreferer">Netflix | The Punisher: Frank</a>
+                        <a href="https://github.com/zaynejaz/HTMLEmail4-Promotional" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="https://ze-email2-punisherjigsaw.netlify.app/" class="projectLink" target="_blank" rel="noopener noreferer">Netflix | The Punisher: JigSaw</a>
+                        <a href="https://github.com/zaynejaz/HTMLEmail4.2-Promotional" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="https://ze-email2-punisherskull.netlify.app/" class="projectLink" target="_blank" rel="noopener noreferer">Netflix | The Punisher: Bullet Skull</a>
+                        <a href="https://github.com/zaynejaz/HTMLEmail4.3-Promotional" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="https://ze-email2-punishergif.netlify.app/" class="projectLink" target="_blank" rel="noopener noreferer">Netflix | The Punisher: Coming Soon</a>
+                        <a href="https://github.com/zaynejaz/HTMLEmail4.4-Promotional" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="https://ze-email3-tunein.netlify.app/" class="projectLink" target="_blank" rel="noopener noreferer">TuneIn Premium</a>
+                        <a href="https://github.com/zaynejaz/HTMLEmail5-Promotional" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="https://ze-email4-invision.netlify.app/" class="projectLink" target="_blank" rel="noopener noreferer">InVision Studio</a>
+                        <a href="https://github.com/zaynejaz/HTMLEmail6-Newsletter" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="https://ze-email5-natgeo.netlify.app/" class="projectLink" target="_blank" rel="noopener noreferer">National Geographic: Issue 169</a>
+                        <a href="https://github.com/zaynejaz/HTMLEmail7-Newsletter" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="https://ze-email6-pandora.netlify.app/" class="projectLink" target="_blank" rel="noopener noreferer">Pandora Premium</a>
+                        <a href="https://github.com/zaynejaz/HTMLEmail8-Transactional" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="https://ze-email7-squarespace.netlify.app/" class="projectLink" target="_blank" rel="noopener noreferer">SquareSpace</a>
+                        <a href="https://github.com/zaynejaz/HTMLEmail9-Transactional" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="https://ze-email8-applenewproducts.netlify.app/" class="projectLink" target="_blank" rel="noopener noreferer">Apple: New Products</a>
+                        <a href="https://github.com/zaynejaz/HTMLEmail10-Multi" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="https://zaynejaz.github.io/klaviyo/" class="projectLink" target="_blank" rel="noopener noreferer">Andrea Iyamah</a>
+                        <a href="https://github.com/zaynejaz/klaviyo" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="https://zaynejaz.github.io/MailerLite/welcomeEmail/" class="projectLink" target="_blank" rel="noopener noreferer">MailerLite: Welcome</a>
+                        <a href="https://zaynejaz.github.io/MailerLite/" class="codeLink" target="_blank" rel="noopener noreferer">view exhibition</a>
+                    </li>
+                    <li>
+                        <a href="" class="projectLink" target="_blank" rel="noopener noreferer">Altassian</a>
+                        <a href="" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="" class="projectLink" target="_blank" rel="noopener noreferer">Design Modo</a>
+                        <a href="" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="" class="projectLink" target="_blank" rel="noopener noreferer">Disney+ | Black Widow</a>
+                        <a href="" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="" class="projectLink" target="_blank" rel="noopener noreferer">Disney+ | Subscription</a>
+                        <a href="" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="" class="projectLink" target="_blank" rel="noopener noreferer">F1 TV - Pro</a>
+                        <a href="" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="" class="projectLink" target="_blank" rel="noopener noreferer">Ferrari Store</a>
+                        <a href="" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="" class="projectLink" target="_blank" rel="noopener noreferer">Ferrari: Newsletter November</a>
+                        <a href="" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="" class="projectLink" target="_blank" rel="noopener noreferer">Google Store</a>
+                        <a href="" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="" class="projectLink" target="_blank" rel="noopener noreferer">Google Domains</a>
+                        <a href="" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="" class="projectLink" target="_blank" rel="noopener noreferer">Louie Spencer: Masterclass</a>
+                        <a href="" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="" class="projectLink" target="_blank" rel="noopener noreferer">MacPaw: CleanMyMac X</a>
+                        <a href="" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="" class="projectLink" target="_blank" rel="noopener noreferer">MetaLab</a>
+                        <a href="" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="" class="projectLink" target="_blank" rel="noopener noreferer">MeUndies: Reciept</a>
+                        <a href="" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="" class="projectLink" target="_blank" rel="noopener noreferer">Microsoft</a>
+                        <a href="" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="" class="projectLink" target="_blank" rel="noopener noreferer">National Geographic: Halloween</a>
+                        <a href="" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="" class="projectLink" target="_blank" rel="noopener noreferer">National Geographic: Inspire</a>
+                        <a href="" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="" class="projectLink" target="_blank" rel="noopener noreferer">Netflix | Coming Soon</a>
+                        <a href="" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="" class="projectLink" target="_blank" rel="noopener noreferer">Netflix | Kids</a>
+                        <a href="" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="" class="projectLink" target="_blank" rel="noopener noreferer">PlayStation | Wrap Up</a>
+                        <a href="" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="" class="projectLink" target="_blank" rel="noopener noreferer">Under Armour: Train Harder</a>
+                        <a href="" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="" class="projectLink" target="_blank" rel="noopener noreferer">Under Armour: Welcome</a>
+                        <a href="" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                        <li>
+                        <a href="" class="projectLink" target="_blank" rel="noopener noreferer">YouTube</a>
+                        <a href="" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                        </li>
+                    <li>
+                        <a href="" class="projectLink" target="_blank" rel="noopener noreferer">YouTube Music</a>
+                        <a href="" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <h6>HTML Emails to <br>liven up any Inbox</h6>
+            </div>
+        </div>
+    </section>
+
+    <section id="modal-lp" class="multiModal-popup">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <span class="close closebtn" onclick="javascript:closeDialog();">&times;</span>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>
+                        <a href="https://ze-inspire.netlify.app/" class="projectLink" target="_blank" rel="noopener noreferer">DJI - Inspire II</a>
+                        <a href="https://github.com/zaynejaz/DJInspire" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="https://ze-htmlemaildeveloper.netlify.app/" class="projectLink" target="_blank" rel="noopener noreferer">Coding Phase</a>
+                        <a href="https://github.com/zaynejaz/CodingPhase" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="https://ze-mjstk.netlify.app/" class="projectLink" target="_blank" rel="noopener noreferer">MJSTK</a>
+                        <a href="https://github.com/zaynejaz/LandingPageMJSTK" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="https://ze-flexifarm.netlify.app/" class="projectLink" target="_blank" rel="noopener noreferer">FlexiFarm</a>
+                        <a href="https://github.com/zaynejaz/Flexifarm-LP" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="https://ze-flexifarmsignup.netlify.app/" class="projectLink" target="_blank" rel="noopener noreferer">FlexiFarm | SignUp</a>
+                        <a href="https://github.com/zaynejaz/Flexifarm-signup" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="https://ze-microsoft.netlify.app/" class="projectLink" target="_blank" rel="noopener noreferer">Microsoft</a>
+                        <a href="https://github.com/zaynejaz/Clone-Microsoft" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="https://ze-theemailcompany.netlify.app/" class="projectLink" target="_blank" rel="noopener noreferer">The Email Company</a>
+                        <a href="https://github.com/zaynejaz/nextjs_landing_page" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <h6>Landing Pages<br>Fostering Customers from Visitors</h6>
+            </div>
+        </div>
+    </section>
+
+    <section id="modal-camp" class="multiModal-popup">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <span class="close closebtn" onclick="javascript:closeDialog();">&times;</span>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>
+                        <a href="https://ze-casablanca.netlify.app/ " class="projectLink" target="_blank" rel="noopener noreferer">Casablanca</a>
+                        <a href="https://github.com/zaynejaz/Casablanca" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <h6>Email Campaigns<br>with a focus on CTOR</h6>
+            </div>
+        </div>
+    </section>
+
+    <section id="modal-pwa" class="multiModal-popup">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <span class="close closebtn" onclick="javascript:closeDialog();">&times;</span>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>
+                        <a href="#" class="projectLink" target="_blank" rel="noopener noreferer">Random Quote Generator</a>
+                        <a href="https://github.com/zaynejaz/randomQuoteGenerator" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="#" class="projectLink" target="_blank" rel="noopener noreferer">Tic Tac Toe</a>
+                        <a href="https://github.com/zaynejaz/bk-tictactoe" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="https://ze-webapps.netlify.app/js%20web%20app-weather%20app%20-%20wthr/wthr" class="projectLink" target="_blank" rel="noopener noreferer">WHTR</a>
+                        <a href="https://github.com/zaynejaz/WebApps/tree/master/JS%20Web%20App-Weather%20App%20-%20WTHR" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="https://ze-webapps.netlify.app/js%20web%20app-quiz%20app%20-%20kwizzr/kwizzr" class="projectLink" target="_blank" rel="noopener noreferer">KWIZZR</a>
+                        <a href="https://github.com/zaynejaz/WebApps/tree/master/JS%20Web%20App-Quiz%20App%20-%20KWIZZR" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                    <li>
+                        <a href="https://ze-webapps.netlify.app/js%20web%20app-text%20analyzer%20-%20searcher/searcher" class="projectLink" target="_blank" rel="noopener noreferer">SearchR</a>
+                        <a href="https://github.com/zaynejaz/WebApps/tree/master/JS%20Web%20App-Text%20Analyzer%20-%20SEARCHER" class="codeLink" target="_blank" rel="noopener noreferer">view code</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <h6>Progressive<br>Web Applications</h6>
+            </div>
+        </div>
+    </section>
+
+    <section id="modal-proto" class="multiModal-popup">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <span class="close closebtn" onclick="javascript:closeDialog();">&times;</span>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>
+                        <a href="https://www.behance.net/gallery/90915067/Revitalize-Architecture" class="projectLink" target="_blank" rel="noopener noreferer">Revitalize Architecture: Website Hero</a>
+                    </li>
+                    <li>
+                        <a href="https://www.behance.net/gallery/90914997/BONBON-Chocolatiers" class="projectLink" target="_blank" rel="noopener noreferer">Bon Bon: Website Hero</a>
+                    </li>
+                    <li>
+                        <a href="https://www.behance.net/gallery/90914897/Monaco-Beach-Club" class="projectLink" target="_blank" rel="noopener noreferer">Monaco Beach Club: Website Hero</a>
+                    </li>
+                    <li>
+                        <a href="https://www.behance.net/gallery/90914751/ZEN-YOGA" class="projectLink" target="_blank" rel="noopener noreferer">Zen Yoga: Website Hero</a>
+                    </li>
+                    <li>
+                        <a href="https://www.behance.net/gallery/90914663/ELATEholidays" class="projectLink" target="_blank" rel="noopener noreferer">Elate Holidays: Website Hero</a>
+                    </li>
+                    <li>
+                        <a href="https://www.behance.net/gallery/90690749/Digital-Agency-Eclectic-Loft" class="projectLink" target="_blank" rel="noopener noreferer">The Eclectic Loft: Homepage</a>
+                    </li>
+                    <li>
+                        <a href="https://www.behance.net/gallery/90690591/Attorney-Russo" class="projectLink" target="_blank" rel="noopener noreferer">Russo: Homepage</a>
+                    </li>
+                    <li>
+                        <a href="https://www.behance.net/gallery/90690327/Consultancy-AnalytIQ" class="projectLink" target="_blank" rel="noopener noreferer">AnalytIQ: Homepage</a>
+                    </li>
+                    <li>
+                        <a href="https://www.behance.net/gallery/90690199/Product-Opulent" class="projectLink" target="_blank" rel="noopener noreferer">Opulent: Homepage</a>
+                    </li>
+                    <li>
+                        <a href="https://www.behance.net/gallery/90689901/Medical-Medicare" class="projectLink" target="_blank" rel="noopener noreferer">MediCare Group: Homepage</a>
+                    </li>
+                    <li>
+                        <a href="https://www.behance.net/gallery/90689421/ATTORNEY-DIETRICH-KLEIN" class="projectLink" target="_blank" rel="noopener noreferer">Dietrich Klein: Homepage</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <h6>UX/UI Designs<br>that make sense</h6>
+            </div>
+        </div>
+    </section>
+
+    <div class="multiModal-cover"></div>
+
+
     <!-- ========= SCRIPTS ========= -->
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -1477,12 +1846,11 @@
     <script src="assets/js/mv.es5.js"></script>
 	<script src="assets/js/contactForm.js"></script>
 	<script src="assets/js/script.js"></script>
-    <script src="assets/js/main.js"></script>
+    <!-- <script src="assets/js/main.js"></script> -->
     <script src="assets/js/music.js"></script>
     <script src="assets/js/script-form.js"></script>
+    <script src="assets/js/pageTransition.js"></script>
 
-
-    
 </body>
 
 </html>
@@ -1492,4 +1860,3 @@
 <!-- https://codepen.io/prakhar625/pen/zddKRj -->
 <!-- https://medium.com/@mag_ops/music-visualiser-with-three-js-web-audio-api-b30175e7b5ba -->
 <!-- https://codepen.io/IanRamosC/pen/MbJNmd -->
-
