@@ -448,6 +448,98 @@ function dataPrinterLP(){
 document.getElementById("lp-data").innerHTML= dataPrinterLP(); 
 
 
+// --------------====================PWA DATA====================--------------
+
+const PWA_DATA=[
+    {
+        projectTitle:   "Random Quote Generator",
+        projectURL:     "https://zaynejaz.github.io/randomQuoteGenerator/",
+        projectRepo:    "https://github.com/zaynejaz/randomQuoteGenerator",
+        btnText:        "view code"
+    },
+    {
+        projectTitle:   "Weather App",
+        projectURL:     "https://ze-webapps.netlify.app/js%20web%20app-weather%20app%20-%20wthr/wthr",
+        projectRepo:    "https://github.com/zaynejaz/WebApps/tree/master/JS%20Web%20App-Weather%20App%20-%20WTHR",
+        btnText:        "view code"   
+    },
+    {
+        projectTitle:   "Quiz App",
+        projectURL:     "https://ze-webapps.netlify.app/js%20web%20app-quiz%20app%20-%20kwizzr/kwizzr",
+        projectRepo:    "https://github.com/zaynejaz/WebApps/tree/master/JS%20Web%20App-Quiz%20App%20-%20KWIZZR",
+        btnText:        "view code"   
+    },
+    {
+        projectTitle:   "Book Library",
+        projectURL:     "https://ze-webapps.netlify.app/js%20web%20app-text%20analyzer%20-%20searcher/searcher",
+        projectRepo:    "https://github.com/zaynejaz/WebApps/tree/master/JS%20Web%20App-Text%20Analyzer%20-%20SEARCHER",
+        btnText:        "view code"   
+    },
+    {
+        projectTitle:   "Voice Budget Tracker",
+        projectURL:     "https://ze-arithmetica.netlify.app/",
+        projectRepo:    "https://github.com/zaynejaz/react-budget-tracker",
+        btnText:        "view code"   
+    },
+    {
+        projectTitle:   "To Do List",
+        projectURL:     "https://zaynejaz.github.io/react-todo-list-app/",
+        projectRepo:    "https://github.com/zaynejaz/react-todo-list-app",
+        btnText:        "view code"   
+    },
+    {
+        projectTitle:   "Calculator",
+        projectURL:     "https://zaynejaz.github.io/react-calculator/",
+        projectRepo:    "https://github.com/zaynejaz/react-calculator",
+        btnText:        "view code"   
+    },
+    {
+        projectTitle:   "Currency Converter",
+        projectURL:     "https://zaynejaz.github.io/currency-converter/",
+        projectRepo:    "https://github.com/zaynejaz/currency-converter",
+        btnText:        "view code"   
+    },
+    {
+        projectTitle:   "Crypto Price Tracker",
+        projectURL:     "https://react-next-crypto-price-tracker.vercel.app/",
+        projectRepo:    "https://github.com/zaynejaz/react-next-crypto-price-tracker",
+        btnText:        "view code"   
+    },
+    {
+        projectTitle:   "QR Code Generator",
+        projectURL:     "https://ze-qrcode.netlify.app/",
+        projectRepo:    "https://github.com/zaynejaz/react-qrcode",
+        btnText:        "view code"   
+    },
+    {
+        projectTitle:   "Web 3.0 Blockchain App",
+        projectURL:     "https://ze-hyperion.netlify.app/",
+        projectRepo:    "https://github.com/zaynejaz/react-blockchain-app",
+        btnText:        "view code"   
+    },
+
+    // {
+    //     projectTitle:   "",
+    //     projectURL:     "",
+    //     projectRepo:    "",
+    //     btnText:        "view code"   
+    // },
+
+] 
+
+PWA_DATA.reverse();
+
+function dataPrinterPWA(){
+    let data_output = '';
+    for(let i = 0; i < PWA_DATA.length; i++) {
+        data_output += '<li><a href="' + PWA_DATA[i].projectURL + '" class="projectLink" target="_blank" rel="noopener noreferer">' + PWA_DATA[i].projectTitle + '</a><a href="' + PWA_DATA[i].projectRepo + '" class="codeLink repoURL" target="_blank" rel="noopener noreferer">' + PWA_DATA[i].btnText + '</a></li>';  
+    }
+    return data_output;
+}
+
+document.getElementById("pwa-data").innerHTML= dataPrinterPWA(); 
+
+
 // --------------====================UX UI PROTOTYPES DATA====================--------------
 
 const PROTO_DATA=[
