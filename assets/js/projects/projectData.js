@@ -446,3 +446,70 @@ function dataPrinterLP(){
 }
 
 document.getElementById("lp-data").innerHTML= dataPrinterLP(); 
+
+
+// --------------====================UX UI PROTOTYPES DATA====================--------------
+
+const PROTO_DATA=[
+    {
+        projectTitle:   "Revitalize Architecture: Website Hero",
+        projectURL:     "https://www.behance.net/gallery/90915067/Revitalize-Architecture",
+    },
+    {
+        projectTitle:   "Bon Bon: Website Hero",
+        projectURL:     "https://www.behance.net/gallery/90914997/BONBON-Chocolatiers",
+    },
+    {
+        projectTitle:   "Monaco Beach Club: Website Hero",
+        projectURL:     "https://www.behance.net/gallery/90914897/Monaco-Beach-Club",
+    },
+    {
+        projectTitle:   "Zen Yoga: Website Hero",
+        projectURL:     "https://www.behance.net/gallery/90914751/ZEN-YOGA",
+    },
+    {
+        projectTitle:   "Elate Holidays: Website Hero",
+        projectURL:     "https://www.behance.net/gallery/90914663/ELATEholidays",
+    },
+    {
+        projectTitle:   "The Eclectic Loft: Homepage",
+        projectURL:     "https://www.behance.net/gallery/90690749/Digital-Agency-Eclectic-Loft",
+    },
+    {
+        projectTitle:   "Russo: Homepage",
+        projectURL:     "https://www.behance.net/gallery/90690591/Attorney-Russo",
+    },
+    {
+        projectTitle:   "AnalytIQ: Homepage",
+        projectURL:     "https://www.behance.net/gallery/90690327/Consultancy-AnalytIQ",
+    },
+    {
+        projectTitle:   "Opulent: Homepage",
+        projectURL:     "https://www.behance.net/gallery/90690199/Product-Opulent",
+    },
+    {
+        projectTitle:   "MediCare Group: Homepage",
+        projectURL:     "https://www.behance.net/gallery/90689901/Medical-Medicare",
+    },
+    {
+        projectTitle:   "Dietrich Klein: Homepage",
+        projectURL:     "https://www.behance.net/gallery/90689421/ATTORNEY-DIETRICH-KLEIN",
+    },
+
+    // {
+    //     projectTitle:   "",
+    //     projectURL:     "",
+    // },
+]
+
+PROTO_DATA.reverse();
+
+function dataPrinterUXUI_PROTO(){
+    let data_output = '';
+    for(let i = 0; i < PROTO_DATA.length; i++) {
+        data_output += '<li><a href="' + PROTO_DATA[i].projectURL + '" class="projectLink" target="_blank" rel="noopener noreferer">' + PROTO_DATA[i].projectTitle + '</a></li>';  
+    }
+    return data_output;
+}
+
+document.getElementById("uxuiProto-data").innerHTML= dataPrinterUXUI_PROTO(); 
