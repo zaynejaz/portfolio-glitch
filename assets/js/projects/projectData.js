@@ -40,7 +40,10 @@ const CEXP_DATA=[
         projectTitle:   "Bubu Island",
         projectURL:     "https://bubu-island.com/",
     },
-    
+    // {
+    //     projectTitle:   "",
+    //     projectURL:     "",
+    // }
 
 ] 
 
@@ -57,22 +60,47 @@ function dataPrinterCL_EXP(){
 document.getElementById("clientExp-data").innerHTML= dataPrinterCL_EXP(); 
 
 
-
-
-
 // --------------====================WEBSITE SAMPLES DATA====================--------------
 
-// HE_DATA.reverse();
+const WS_DATA=[
+    {
+        projectTitle:   "Skulpt",
+        projectURL:     "https://ze-skulpt.netlify.app/",
+        projectRepo:    "https://github.com/zaynejaz/Skulpt",
+        btnText:        "view code"
+    },
+    {
+        projectTitle:   "Casablanca",
+        projectURL:     "https://ze-casablanca.netlify.app/ ",
+        projectRepo:    "https://github.com/zaynejaz/Casablanca",
+        btnText:        "view code"
+    },
+    {
+        projectTitle:   "Zayn Ejaz | GitHub Pages",
+        projectURL:     "https://zaynejaz.github.io/ ",
+        projectRepo:    "https://github.com/zaynejaz/zaynejaz.github.io",
+        btnText:        "view code"
+    },
+    // {
+    //     projectTitle:   "",
+    //     projectURL:     "",
+    //     projectRepo:    "",
+    //     btnText:        "view code"
+    // },
+]
 
-// function dataPrinterHTML_E(){
-//     let data_output = '';
-//     for(let i = 0; i < HE_DATA.length; i++) {
-//         data_output += '<li><a href="' + HE_DATA[i].projectURL + '" class="projectLink" target="_blank" rel="noopener noreferer">' + HE_DATA[i].projectTitle + '</a><a href="' + HE_DATA[i].projectRepo + '" class="codeLink repoURL" target="_blank" rel="noopener noreferer">' + HE_DATA[i].btnText + '</a></li>';  
-//     }
-//     return data_output;
-// }
+WS_DATA.reverse();
 
-// document.getElementById("htmlEmail-data").innerHTML= dataPrinterHTML_E(); 
+function dataPrinterWEB_SAM(){
+    let data_output = '';
+    for(let i = 0; i < WS_DATA.length; i++) {
+        data_output += '<li><a href="' + WS_DATA[i].projectURL + '" class="projectLink" target="_blank" rel="noopener noreferer">' + WS_DATA[i].projectTitle + '</a><a href="' + WS_DATA[i].projectRepo + '" class="codeLink repoURL" target="_blank" rel="noopener noreferer">' + WS_DATA[i].btnText + '</a></li>';  
+    }
+    return data_output;
+}
+
+document.getElementById("webSamples-data").innerHTML= dataPrinterWEB_SAM(); 
+
 
 // --------------====================HTML EMAIL DATA====================--------------
 const HE_DATA=[
