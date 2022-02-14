@@ -99,6 +99,7 @@ const multiModal = (function () {
 })();
 
 
+// show / close modals
 const pageContainer = document.querySelector("#pageContainer");
 const projectModal = document.querySelector(".projectLink");
 const closeModal = document.querySelector(".close.closebtn");
@@ -106,12 +107,33 @@ const closeModalCover = document.querySelector(".multiModal-cover");
 
 projectModal.addEventListener("click", projectModalActive);
 closeModal.addEventListener("click", projectModalInactive);
-closeModalCover.addEventListener("click", projectModalInactive);
+closeModalCover.addEventListener("click", projectModalInactive)
 document.addEventListener("keydown", ({ key }) => {
     if (key === "Escape")
         projectModalInactive();
+        activeShowFooter();
 })
 
 function projectModalActive() { pageContainer.style.filter = "blur(2px)"; }
 function projectModalInactive() { pageContainer.style.filter = "blur(0px)"; }
 
+
+
+// Hide / show footer when modal is active
+const mainFooter = document.querySelector("#footer-contact-section");
+const hideFooter = document.querySelector(".removeFooter");
+const showFooter = document.querySelector(".addFooter");
+
+hideFooter.addEventListener("click", activeHideFooter);
+showFooter.addEventListener("click", activeShowFooter);
+closeModalCover.addEventListener("click", activeShowFooter)
+
+function activeHideFooter() { 
+    mainFooter.classList.add('hideFooter'), 
+    mainFooter.classList.remove('showFooter'); 
+}
+
+function activeShowFooter() { 
+    mainFooter.classList.remove('hideFooter'), 
+    mainFooter.classList.hide('showFooter'); 
+}

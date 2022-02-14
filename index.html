@@ -710,25 +710,25 @@
                     <!-- portfolio site link -->
 
                     <li>
-                        <a href="javascript:void(0)" id="open-client" class="projectDataLink" onclick="modalClient();">Client Experience</a>
+                        <a href="javascript:void(0)" id="open-client" class="projectLink projectDataLink removeFooter" onclick="modalClient(), activeHideFooter();">Client Experience</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)" id="open-website" class="projectDataLink" onclick="modalWebsite();"">Website Samples</a>
+                        <a href="javascript:void(0)" id="open-website" class="projectLink projectDataLink removeFooter" onclick="modalWebsite(), activeHideFooter();">Website Samples</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)" id="open-email" class="projectDataLink" onclick="modalEmail();"">HTML Emails</a>
+                        <a href="javascript:void(0)" id="open-email" class="projectLink projectDataLink removeFooter" onclick="modalEmail(), activeHideFooter();">HTML Emails</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)" id="open-lp" class="projectDataLink" onclick="modalLP();"">Landing Pages</a>
+                        <a href="javascript:void(0)" id="open-lp" class="projectLink projectDataLink removeFooter" onclick="modalLP(), activeHideFooter();">Landing Pages</a>
                     </li>
                     <!-- <li>
-                        <a href="javascript:void(0)" id="open-camp" class="projectDataLink" onclick="modalCamp();"">Email Campaigns</a>
+                        <a href="javascript:void(0)" id="open-camp" class="projectDataLink" onclick="modalCamp(), activeHideFooter();"">Email Campaigns</a>
                     </li> -->
                     <li>
-                        <a href="javascript:void(0)" id="open-webapp" class="projectDataLink" onclick="modalPwa();"">Progressive Web Apps</a>
+                        <a href="javascript:void(0)" id="open-webapp" class="projectLink projectDataLink removeFooter" onclick="modalPwa(), activeHideFooter();">Progressive Web Apps</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)" id="open-proto" class="projectDataLink" onclick="modalProto();"">UX/UI Designs</a>
+                        <a href="javascript:void(0)" id="open-proto" class="projectLink projectDataLink removeFooter" onclick="modalProto(), activeHideFooter();">UX/UI Designs</a>
                     </li>
                 </ul>
                 <a href="https://github.com/zaynejaz" id="moreGH" class="more" target="_blank"
@@ -981,8 +981,10 @@
     </div>
 
 
-
-
+<style>
+    .hideFooter{display:none;}
+    .showFooter{display:inline;}
+</style>
 
     <footer id="footer-contact-section">
         <div class="container contact-container">
@@ -1425,7 +1427,7 @@
         <div class="modal-content">
 
             <div class="modal-header">
-                <span class="close closebtn" onclick="javascript:closeDialog();">&times;</span>
+                <span class="close closebtn addFooter" onclick="javascript:closeDialog(), activeShowFooter();">&times;</span>
             </div>
             <div class="modal-body">
                 <ul id="clientExp-data">
@@ -1445,7 +1447,7 @@
     <section id="modal-website" class="multiModal-popup">
         <div class="modal-content">
             <div class="modal-header">
-                <span class="close closebtn" onclick="javascript:closeDialog();">&times;</span>
+                <span class="close closebtn addFooter" onclick="javascript:closeDialog(), activeShowFooter();">&times;</span>
             </div>
             <div class="modal-body">
                 <ul id="webSamples-data">
@@ -1466,7 +1468,7 @@
     <section id="modal-email" class="multiModal-popup">
         <div class="modal-content">
             <div class="modal-header">
-                <span class="close closebtn" onclick="javascript:closeDialog();">&times;</span>
+                <span class="close closebtn addFooter" onclick="javascript:closeDialog(), activeShowFooter();">&times;</span>
             </div>
             <div class="modal-body">
                 <ul id="htmlEmail-data">
@@ -1488,7 +1490,7 @@
         <div class="modal-content">
 
             <div class="modal-header">
-                <span class="close closebtn" onclick="javascript:closeDialog();">&times;</span>
+                <span class="close closebtn addFooter" onclick="javascript:closeDialog(), activeShowFooter();">&times;</span>
             </div>
             <div class="modal-body">
 
@@ -1512,7 +1514,7 @@
         <div class="modal-content">
 
             <div class="modal-header">
-                <span class="close closebtn" onclick="javascript:closeDialog();">&times;</span>
+                <span class="close closebtn addFooter" onclick="javascript:closeDialog(), activeShowFooter();">&times;</span>
             </div>
             <div class="modal-body">
 
@@ -1536,7 +1538,7 @@
         <div class="modal-content">
 
             <div class="modal-header">
-                <span class="close closebtn" onclick="javascript:closeDialog();">&times;</span>
+                <span class="close closebtn addFooter" onclick="javascript:closeDialog();">&times;</span>
             </div>
             <div class="modal-body">
                 <ul id="uxuiProto-data">
