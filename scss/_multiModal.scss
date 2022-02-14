@@ -22,8 +22,10 @@
 .multiModal-contents {
 	position: relative;
 	padding: 20px;
+	padding-left: 0px;
+  padding-bottom: 0px;
 	max-width: 400px;
-	margin: auto;
+	// margin: auto;
   
 }
 .multiModal-active .multiModal-contents {
