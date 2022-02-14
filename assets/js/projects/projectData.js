@@ -1,3 +1,79 @@
+// --------------====================CLIENT EXPERIENCE DATA====================--------------
+const CEXP_DATA=[
+    {
+        projectTitle:   "Apple",
+        projectURL:     "https://apple.com/",
+    },
+    {
+        projectTitle:   "LVMH",
+        projectURL:     "https://lvmh.com/",
+    },
+    {
+        projectTitle:   "Mainfreight",
+        projectURL:     "https://mainfreight.com/",
+    },
+    {
+        projectTitle:   "Puma Energy",
+        projectURL:     "https://pumaenergy.com/",
+    },
+    {
+        projectTitle:   "Sheba",
+        projectURL:     "https://sheba.com/",
+    },
+    {
+        projectTitle:   "IAMS",
+        projectURL:     "https://iams.com/",
+    },
+    {
+        projectTitle:   "Mars Corporation",
+        projectURL:     "https://mars.com/",
+    },
+    {
+        projectTitle:   "BrightKids",
+        projectURL:     "https://athome.brightkidspreschool.com/",
+    },
+    {
+        projectTitle:   "ClubVet",
+        projectURL:     "https://clubvet.com.tr/",
+    },
+    {
+        projectTitle:   "Bubu Island",
+        projectURL:     "https://bubu-island.com/",
+    },
+    
+
+] 
+
+CEXP_DATA.reverse();
+
+function dataPrinterCL_EXP(){
+    let data_output = '';
+    for(let i = 0; i < CEXP_DATA.length; i++) {
+        data_output += '<li><a href="' + CEXP_DATA[i].projectURL + '" class="projectLink" target="_blank" rel="noopener noreferer">' + CEXP_DATA[i].projectTitle + '</a></li>';  
+    }
+    return data_output;
+}
+
+document.getElementById("clientExp-data").innerHTML= dataPrinterCL_EXP(); 
+
+
+
+
+
+// --------------====================WEBSITE SAMPLES DATA====================--------------
+
+// HE_DATA.reverse();
+
+// function dataPrinterHTML_E(){
+//     let data_output = '';
+//     for(let i = 0; i < HE_DATA.length; i++) {
+//         data_output += '<li><a href="' + HE_DATA[i].projectURL + '" class="projectLink" target="_blank" rel="noopener noreferer">' + HE_DATA[i].projectTitle + '</a><a href="' + HE_DATA[i].projectRepo + '" class="codeLink repoURL" target="_blank" rel="noopener noreferer">' + HE_DATA[i].btnText + '</a></li>';  
+//     }
+//     return data_output;
+// }
+
+// document.getElementById("htmlEmail-data").innerHTML= dataPrinterHTML_E(); 
+
 // --------------====================HTML EMAIL DATA====================--------------
 const HE_DATA=[
     {
