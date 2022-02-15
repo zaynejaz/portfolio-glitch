@@ -98,8 +98,40 @@ const multiModal = (function () {
 
 })();
 
-
-// show / close modals
+// ===============Open Modals on click
+function modalClient() {
+    multiModal.show( "#modal-client" );
+    projectModalActive();
+}
+function modalWebsite() {
+    multiModal.show( "#modal-website" );
+    projectModalActive();
+}
+function modalEmail() {
+    multiModal.show( "#modal-email" );
+    projectModalActive();
+}
+function modalLP() {
+    multiModal.show( "#modal-lp" );
+    projectModalActive();
+}
+// function modalCamp() {
+//     multiModal.show( "#modal-camp" );
+//     projectModalActive();
+// }
+function modalPwa() {
+    multiModal.show( "#modal-pwa" );
+    projectModalActive();
+}
+function modalProto() {
+    multiModal.show( "#modal-proto" );
+    projectModalActive();
+}
+function closeDialog() {
+    multiModal.hide();
+    projectModalInactive();
+}
+// ===============show / close modals
 const pageContainer = document.querySelector("#pageContainer");
 const projectModal = document.querySelector(".projectLink");
 const closeModal = document.querySelector(".close.closebtn");
@@ -119,7 +151,7 @@ function projectModalInactive() { pageContainer.style.filter = "blur(0px)"; }
 
 
 
-// Hide / show footer when modal is active
+// ===============Hide / show footer when modal is active
 const mainFooter = document.querySelector("#footer-contact-section");
 const hideFooter = document.querySelector(".removeFooter");
 const showFooter = document.querySelector(".addFooter");
@@ -137,3 +169,4 @@ function activeShowFooter() {
     mainFooter.classList.remove('hideFooter'), 
     mainFooter.classList.hide('showFooter'); 
 }
+

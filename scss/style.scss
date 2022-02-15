@@ -604,6 +604,7 @@ ptrb-1{
       max-width: 16.4% !important;
       margin: 0px !important;
       margin-top: -15px !important;
+      cursor: pointer;
     }
     .contact-itemInfo{
       margin: 0px !important;
@@ -624,6 +625,16 @@ ptrb-1{
   2%{
     transform: rotateX(0deg) skewX(0deg);
   }
+}
+
+.hideFooter{
+  visibility:hidden; 
+  display:none
+}
+
+.showFooter{
+  visibility:visible; 
+  display: inline
 }
 
 
