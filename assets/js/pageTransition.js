@@ -146,8 +146,9 @@ document.addEventListener("keydown", ({ key }) => {
         activeShowFooter();
 })
 
-function projectModalActive() { pageContainer.style.filter = "blur(2px)"; }
-function projectModalInactive() { pageContainer.style.filter = "blur(0px)"; }
+function projectModalActive() { pageContainer.style.filter = "blur(2px)"; window.scrollTo(0, 0);}
+function projectModalInactive() { pageContainer.style.filter = "blur(0px)"; window.scrollTo(0,document.body.scrollHeight);
+ }
 
 
 
@@ -162,11 +163,11 @@ closeModalCover.addEventListener("click", activeShowFooter)
 
 function activeHideFooter() { 
     mainFooter.classList.add('hideFooter'), 
-    mainFooter.classList.remove('showFooter'); 
+    mainFooter.classList.remove('showFooter');
 }
 
 function activeShowFooter() { 
     mainFooter.classList.remove('hideFooter'), 
-    mainFooter.classList.hide('showFooter'); 
+    mainFooter.classList.hide('showFooter');
 }
 
