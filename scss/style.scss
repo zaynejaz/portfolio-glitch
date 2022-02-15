@@ -457,6 +457,12 @@ span {
 }
 
 @media only screen and (max-width: 578px) {
+  .hideItems{
+    visibility:hidden; 
+    display:none
+  }
+
+  
   header {
     position: static;
     top: 10px;

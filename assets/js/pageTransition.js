@@ -146,9 +146,8 @@ document.addEventListener("keydown", ({ key }) => {
         activeShowFooter();
 })
 
-function projectModalActive() { pageContainer.style.filter = "blur(2px)"; window.scrollTo(0, 0);}
-function projectModalInactive() { pageContainer.style.filter = "blur(0px)"; window.scrollTo(0,document.body.scrollHeight);
- }
+function projectModalActive() { pageContainer.style.filter = "blur(2px)"; document.querySelector("#content", "#music-container").classList.add('hideItems'); window.scrollTo(0, 0);}
+function projectModalInactive() { pageContainer.style.filter = "blur(0px)"; document.querySelector("#content", "#music-container").classList.remove('hideItems'); window.scrollTo(0,document.body.scrollHeight);}
 
 
 

@@ -237,7 +237,7 @@ const HE_DATA=[
         btnText:        "view code"   
     },
     {
-        projectTitle:   "Louie Spencer: Masterclass<",
+        projectTitle:   "Louie Spencer: Masterclass",
         projectURL:     "https://zaynejaz.github.io/htmlemail-louiespenceMasterclass/",
         projectRepo:    "https://github.com/zaynejaz/htmlemail-louiespenceMasterclass",
         btnText:        "view code"   
