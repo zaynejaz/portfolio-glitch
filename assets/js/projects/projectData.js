@@ -425,6 +425,12 @@ const LP_DATA=[
         projectRepo:    "https://github.com/zaynejaz/react-lp-digital",
         btnText:        "view code"   
     },
+    {
+        projectTitle:   "Startup",
+        projectURL:     "https://ze-startup.vercel.app",
+        projectRepo:    "https://github.com/zaynejaz/react-lp-startup",
+        btnText:        "view code"   
+    },
 
     // {
     //     projectTitle:   "",
