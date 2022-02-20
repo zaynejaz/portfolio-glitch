@@ -437,6 +437,12 @@ const LP_DATA=[
         projectRepo:    "https://github.com/zaynejaz/react-lp-minimal",
         btnText:        "view code"   
     },
+    {
+        projectTitle:   "CRM",
+        projectURL:     "https://ze-crm.vercel.app/",
+        projectRepo:    "https://github.com/zaynejaz/react-lp-crm",
+        btnText:        "view code"   
+    },
 
     // {
     //     projectTitle:   "",
