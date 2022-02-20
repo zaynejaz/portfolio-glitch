@@ -431,6 +431,12 @@ const LP_DATA=[
         projectRepo:    "https://github.com/zaynejaz/react-lp-startup",
         btnText:        "view code"   
     },
+    {
+        projectTitle:   "Minimal",
+        projectURL:     "https://ze-minimal.vercel.app/",
+        projectRepo:    "https://github.com/zaynejaz/react-lp-minimal",
+        btnText:        "view code"   
+    },
 
     // {
     //     projectTitle:   "",
