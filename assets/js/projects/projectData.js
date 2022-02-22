@@ -443,6 +443,12 @@ const LP_DATA=[
         projectRepo:    "https://github.com/zaynejaz/react-lp-crm",
         btnText:        "view code"   
     },
+    {
+        projectTitle:   "Moderna",
+        projectURL:     "https://ze-moderna.vercel.app/",
+        projectRepo:    "https://github.com/zaynejaz/react-lp-moderna",
+        btnText:        "view code"   
+    },
 
     // {
     //     projectTitle:   "",
