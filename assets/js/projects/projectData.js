@@ -455,6 +455,12 @@ const LP_DATA=[
         projectRepo:    "https://github.com/zaynejaz/react-lp-donation",
         btnText:        "view code"   
     },
+    {
+        projectTitle:   "Saasm",
+        projectURL:     "https://ze-saasm.vercel.app/",
+        projectRepo:    "https://github.com/zaynejaz/react-lp-saasm",
+        btnText:        "view code"   
+    },
 
     // {
     //     projectTitle:   "",
