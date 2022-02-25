@@ -15,5 +15,6 @@
 .prettierignore/*
 .prettierignore
 
-### General Folders ###
-projects/*
+### General Folders and Files ###
+projectsX/*
+music/index.html
