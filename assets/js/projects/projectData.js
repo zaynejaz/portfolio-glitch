@@ -17,6 +17,10 @@ const CEXP_DATA=[
         projectURL:     "https://pumaenergy.com/",
     },
     {
+        projectTitle:   "Pedigree",
+        projectURL:     "https://pedigree.com/",
+    },
+    {
         projectTitle:   "Sheba",
         projectURL:     "https://sheba.com/",
     },
