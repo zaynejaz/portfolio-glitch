@@ -449,6 +449,12 @@ const LP_DATA=[
         projectRepo:    "https://github.com/zaynejaz/react-lp-moderna",
         btnText:        "view code"   
     },
+    {
+        projectTitle:   "Donation",
+        projectURL:     "https://ze-donation.vercel.app/",
+        projectRepo:    "https://github.com/zaynejaz/react-lp-donation",
+        btnText:        "view code"   
+    },
 
     // {
     //     projectTitle:   "",
