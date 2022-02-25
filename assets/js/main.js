@@ -3,9 +3,9 @@
 
 // ==================== TOGGLE CHANGE SITE LANGUAGE ====================
 // define lang reload anchors
-var dataReload = document.querySelectorAll("[data-reload]");
+let dataReload = document.querySelectorAll("[data-reload]");
 // lang translations
-var language = {
+let language = {
     // ENGLISH (default)
     en: {
         occupation: "Web Developer",
@@ -100,7 +100,7 @@ if (window.location.hash) {
     }
 }
 // define lang reload onclick illiteration
-for (i = 0; i <= dataReload.length; i++) {
+for (let i = 0; i <= dataReload.length; i++) {
     dataReload[i].onclick = function () {
         location.reload(true);
     };
