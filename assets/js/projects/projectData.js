@@ -44,6 +44,10 @@ const CEXP_DATA=[
         projectTitle:   "Bubu Island",
         projectURL:     "https://bubu-island.com/",
     },
+    {
+        projectTitle:   "Sekoya",
+        projectURL:     "https://akasya.io",
+    },
     // {
     //     projectTitle:   "",
     //     projectURL:     "",
@@ -88,7 +92,7 @@ const WS_DATA=[
 
     {
         projectTitle:   "Specialized",
-        projectURL:     "specialized.vercel.app",
+        projectURL:     "https://specialized.vercel.app",
         projectRepo:    "https://github.com/zaynejaz/react-ws-specialized",
         btnText:        "view code"
     },
