@@ -85,6 +85,13 @@ const WS_DATA=[
         projectRepo:    "https://github.com/zaynejaz/zaynejaz.github.io",
         btnText:        "view code"
     },
+
+    {
+        projectTitle:   "Specialized",
+        projectURL:     "specialized.vercel.app",
+        projectRepo:    "https://github.com/zaynejaz/react-ws-specialized",
+        btnText:        "view code"
+    },
     // {
     //     projectTitle:   "",
     //     projectURL:     "",
